@@ -1,0 +1,108 @@
+{
+  "header": {
+    "home": "Accueil",
+    "features": "Caractéristiques",
+    "about": "À propos"
+  },
+  "hero": {
+    "badge": "Plus de 50 000 examens disponibles",
+    "title": "Trouvez facilement",
+    "title_highlight": "les anciens examens universitaires",
+    "title_end": "",
+    "description": "La plus grande archive communautaire d'examens universitaires algériens. Accédez à des ressources de haute qualité en arabe, anglais et français pour réussir vos études.",
+    "cta": "Commencer à explorer"
+  },
+  "features": {
+    "title": "Pourquoi choisir UniExams DZ",
+    "subtitle": "Découvrez ce qui fait de notre plateforme le meilleur choix pour les étudiants"
+  },
+  "feature1": {
+    "title": "Examens organisés",
+    "desc": "Parcourez une archive bien structurée classée par année académique, semestre et nom du module pour une navigation sans effort."
+  },
+  "feature2": {
+    "title": "Alimenté par les étudiants",
+    "desc": "Créé par les étudiants, pour les étudiants. Téléchargez vos propres examens pour aider vos pairs et maintenir l'archive nationale."
+  },
+  "feature3": {
+    "title": "Support multilingue",
+    "desc": "La plateforme prend en charge l'arabe, l'anglais et le français, s'adressant à toutes les disciplines académiques et branches d'Algérie."
+  },
+  "feature4": {
+    "title": "Recherche alimentée par l'IA",
+    "desc": "Recherche intelligente et recommandations alimentées par l'IA pour vous aider à trouver exactement ce que vous cherchez plus rapidement et plus précisément."
+  },
+  "feature5": {
+    "title": "Solutions LaTeX",
+    "desc": "Accédez à des solutions d'examens formatées professionnellement en LaTeX, parfaites pour comprendre le contenu mathématique et scientifique complexe."
+  },
+  "feature6": {
+    "title": "Pas de répétition",
+    "desc": "L'archive organisée avec détection de doublon garantit que vous accédez à des examens uniques sans aucune répétition, maximisant la variété d'études."
+  },
+  "about": {
+    "title": "À propos de UniExams DZ",
+    "subtitle": "Construire un meilleur avenir pour les étudiants algériens",
+    "para1": "UniExams DZ est une plateforme communautaire d'étudiants dédiée à rendre les anciens examens universitaires accessibles à tous les étudiants algériens. Nous croyons que les ressources éducatives de qualité doivent être gratuites et facilement disponibles pour tous.",
+    "para2": "Fondée par les étudiants, pour les étudiants, notre mission est de créer la plus grande archive complète des examens universitaires en Algérie. Nous supportons l'apprentissage en arabe, anglais et français pour tous les horizons académiques.",
+    "para3": "Chaque examen sur notre plateforme est téléchargé par la communauté, garantissant que vous accédez à des matériels d'étude authentiques et de haute qualité de la part de vos pairs qui ont récemment suivi ces cours.",
+    "stats1": "50K+",
+    "stats1_label": "Examens disponibles",
+    "stats2": "30+",
+    "stats2_label": "Universités",
+    "stats3": "3",
+    "stats3_label": "Langues",
+    "value1": {
+      "title": "Piloté par la communauté",
+      "desc": "Créé par des étudiants qui comprennent les besoins des étudiants"
+    },
+    "value2": {
+      "title": "Gratuit et sécurisé",
+      "desc": "Toutes les ressources sont gratuites et vos données sont protégées"
+    },
+    "value3": {
+      "title": "Toujours accessible",
+      "desc": "Disponible 24h/24 et 7j/7 depuis n'importe où avec Internet"
+    }
+  },
+  "footer": {
+    "company": "UniExams DZ",
+    "description": "Autonomiser les étudiants algériens avec des solutions d'examens innovantes et l'excellence académique.",
+    "resources": "Ressources",
+    "about": "À propos de nous",
+    "contact": "Contact",
+    "developer": "Développeur",
+    "copyright": "© 2026 UniExams DZ. Tous droits réservés. Une initiative menée par les étudiants.",
+    "disclaimer": "Cette plateforme n'est pas officiellement affiliée au ministère de l'enseignement supérieur ou à une université."
+  },
+  "modal": {
+    "upload": "Télécharger un examen",
+    "quick": "Téléchargement rapide",
+    "information": "Informations",
+    "quick_desc": "Téléchargez rapidement votre fichier d'examen. Les détails peuvent être ajoutés plus tard.",
+    "drag": "Glissez et déposez votre examen ici",
+    "supported": "ou cliquez pour parcourir. Formats supportés : PDF, JPG, PNG",
+    "upload_now": "Télécharger maintenant",
+    "info_desc": "Fournissez des détails sur votre examen pour aider à organiser l'archive.",
+    "university": "Université",
+    "university_placeholder": "ex. USTHB, ESI, Université de Constantine 1",
+    "major": "Spécialité / Faculté",
+    "major_placeholder": "ex. Informatique, Médecine, Ingénierie",
+    "year": "Année académique",
+    "year_placeholder": "ex. 2025-2026",
+    "semester": "Semestre",
+    "semester_placeholder": "ex. Semestre 1 ou 2",
+    "subject": "Sujet / Module",
+    "subject_placeholder": "ex. Systèmes de base de données, Calcul avancé",
+    "exam_type": "Type d'examen",
+    "exam_type_placeholder": "ex. Examen partiel, Final, Quiz, Pratique",
+    "language": "Langue de l'examen",
+    "language_placeholder": "ex. Arabe, Anglais, Français, Mélangé",
+    "file": "Télécharger le fichier d'examen",
+    "file_click": "Cliquez pour télécharger ou glissez et déposez",
+    "file_support": "PDF, JPG, PNG (Max 10 Mo)",
+    "notes": "Notes supplémentaires (Optionnel)",
+    "notes_placeholder": "Ajoutez des informations utiles sur cet examen...",
+    "submit": "Soumettre l'examen"
+  }
+}

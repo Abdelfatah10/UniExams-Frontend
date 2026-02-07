@@ -1,0 +1,108 @@
+{
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About"
+  },
+  "hero": {
+    "badge": "Over 50,000 Exams Available",
+    "title": "Find past",
+    "title_highlight": "university exams",
+    "title_end": "easily",
+    "description": "The largest student-driven archive for Algerian universities. Access high-quality resources in Arabic, English, and French to excel in your studies.",
+    "cta": "Start Browsing"
+  },
+  "features": {
+    "title": "Why Choose UniExams DZ",
+    "subtitle": "Discover what makes our platform the best choice for students"
+  },
+  "feature1": {
+    "title": "Organized Exams",
+    "desc": "Browse a well-structured archive categorized by academic year, semester, and module name for effortless navigation."
+  },
+  "feature2": {
+    "title": "Student Powered",
+    "desc": "Built by students, for students. Upload your own exam papers to help your peers and maintain the national archive."
+  },
+  "feature3": {
+    "title": "Multilingual Support",
+    "desc": "The platform supports Arabic, English, and French, catering to all academic disciplines and branches in Algeria."
+  },
+  "feature4": {
+    "title": "AI-Powered Search",
+    "desc": "Intelligent search and recommendations powered by AI to help you find exactly what you need faster and more accurately."
+  },
+  "feature5": {
+    "title": "LaTeX Solutions",
+    "desc": "Access professionally formatted exam solutions in LaTeX, perfect for understanding complex mathematical and scientific content."
+  },
+  "feature6": {
+    "title": "No Repetition",
+    "desc": "Curated archive with duplicate detection ensures you access unique exams without any repetition, maximizing study variety."
+  },
+  "about": {
+    "title": "About UniExams DZ",
+    "subtitle": "Building a better future for Algerian students",
+    "para1": "UniExams DZ is a student-driven platform dedicated to making past university exam papers accessible to all Algerian students. We believe that quality educational resources should be free and readily available to everyone.",
+    "para2": "Founded by students, for students, our mission is to create the largest comprehensive archive of university exams across Algeria. We support learning in Arabic, English, and French to cater to all academic backgrounds.",
+    "para3": "Every exam on our platform is uploaded by the community, ensuring you have access to authentic, high-quality study materials from your peers who have recently taken these courses.",
+    "stats1": "50K+",
+    "stats1_label": "Exams Available",
+    "stats2": "30+",
+    "stats2_label": "Universities",
+    "stats3": "3",
+    "stats3_label": "Languages",
+    "value1": {
+      "title": "Community Driven",
+      "desc": "Built by students who understand student needs"
+    },
+    "value2": {
+      "title": "Free & Secure",
+      "desc": "All resources are free and your data is protected"
+    },
+    "value3": {
+      "title": "Always Accessible",
+      "desc": "Available 24/7 from anywhere with internet"
+    }
+  },
+  "footer": {
+    "company": "UniExams DZ",
+    "description": "Empowering Algerian students with innovative exam solutions and academic excellence.",
+    "resources": "Resources",
+    "about": "About Us",
+    "contact": "Contact",
+    "developer": "Developer",
+    "copyright": "© 2026 UniExams DZ. All rights reserved. A student-led initiative.",
+    "disclaimer": "This platform is not officially affiliated with the Ministry of Higher Education or any university."
+  },
+  "modal": {
+    "upload": "Upload Exam",
+    "quick": "Quick Upload",
+    "information": "Information",
+    "quick_desc": "Quick upload your exam file. Details can be added later.",
+    "drag": "Drag and drop your exam here",
+    "supported": "or click to browse. Supported: PDF, JPG, PNG",
+    "upload_now": "Upload Now",
+    "info_desc": "Provide details about your exam to help organize the archive.",
+    "university": "University",
+    "university_placeholder": "e.g. USTHB, ESI, University of Constantine 1",
+    "major": "Major / Faculty",
+    "major_placeholder": "e.g. Computer Science, Medicine, Engineering",
+    "year": "Academic Year",
+    "year_placeholder": "e.g. 2025-2026",
+    "semester": "Semester",
+    "semester_placeholder": "e.g. Semester 1 or 2",
+    "subject": "Subject / Module",
+    "subject_placeholder": "e.g. Database Systems, Advanced Calculus",
+    "exam_type": "Exam Type",
+    "exam_type_placeholder": "e.g. Midterm, Final, Quiz, Practical",
+    "language": "Exam Language",
+    "language_placeholder": "e.g. Arabic, English, French, Mixed",
+    "file": "Upload Exam File",
+    "file_click": "Click to upload or drag and drop",
+    "file_support": "PDF, JPG, PNG (Max 10MB)",
+    "notes": "Additional Notes (Optional)",
+    "notes_placeholder": "Add any helpful information about this exam...",
+    "submit": "Submit Exam"
+  }
+}
