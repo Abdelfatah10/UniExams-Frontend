@@ -16,7 +16,6 @@
 
     <!-- i18next Library for Internationalization -->
     <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/dist/umd/i18next.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/dist/umd/i18nextHttpBackend.min.js"></script>
 
     <!-- Tailwind Configuration -->
     <script id="tailwind-config">
@@ -120,7 +119,7 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-wrap gap-4">
-                        <button onclick="window.location.href='E:/Me/Dev/Projects/UniExams/frontend/search/index.html'" class="flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white transition-all hover:scale-[1.02] active:scale-95" data-i18n="hero.cta">Start Browsing</button>
+                        <button onclick="window.location.href='/search'" class="flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white transition-all hover:scale-[1.02] active:scale-95" data-i18n="hero.cta">Start Browsing</button>
                     </div>
                 </div>
 
@@ -131,23 +130,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ===== SEARCH SECTION ===== -->
-        <!-- <section class="bg-white dark:bg-white/5 py-16">
-            <div class="mx-auto max-w-[1000px] px-6"> -->
-            <!-- Section Header -->
-            <!-- <div class="mb-8 text-center">
-                <h2 class="text-2xl font-bold tracking-tight">Search the Archive</h2>
-                <p class="mt-2 text-gray-500">Filter through thousands of documents instantly</p>
-            </div> -->
-
-            <!-- Search Input -->
-            <!-- <div class="relative">
-                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">search</span>
-                <input class="h-14 w-full rounded-lg border border-[#d6d1e6] bg-white pl-12 pr-4 text-base focus:border-primary focus:ring-1 focus:ring-primary dark:border-white/10 dark:bg-white/5" placeholder="Search exams, modules, subjects..." type="text" />
-            </div>
-            </div> -->
-        <!-- </section> -->
 
         <!-- ===== FEATURES GRID ===== -->
         <section id="features" class="mx-auto max-w-[1200px] px-6 py-20">
@@ -559,23 +541,47 @@
             // Set active tab on init
             switchTab("quick");
 
-            // ===== i18n INITIALIZATION WITH HTTP BACKEND =====
-            // Initialize i18next with HTTP backend to load JSON files
-            i18next
-                .use(window.i18nextHttpBackend)
-                .init({
-                    lng: localStorage.getItem('language') || 'en',
-                    fallbackLng: 'en',
-                    backend: {
-                        loadPath: './locales/{{lng}}.json'
-                    },
-                    interpolation: {
-                        escapeValue: false
-                    }
-                }, function(err, t) {
-                    if (err) console.error('i18n init error:', err);
-                    translatePage();
-                });
+            // ===== i18n INITIALIZATION =====
+            // Load translations from JSON files and initialize i18next
+            async function initializeI18n() {
+                try {
+                    // Load all language files
+                    const responses = await Promise.all([
+                        fetch('./locales/en.json').then(r => r.json()),
+                        fetch('./locales/fr.json').then(r => r.json()),
+                        fetch('./locales/ar.json').then(r => r.json())
+                    ]);
+
+                    const resources = {
+                        en: { translation: responses[0] },
+                        fr: { translation: responses[1] },
+                        ar: { translation: responses[2] }
+                    };
+
+                    // Initialize i18next
+                    i18next.init({
+                        lng: localStorage.getItem('language') || 'en',
+                        fallbackLng: 'en',
+                        resources: resources,
+                        interpolation: {
+                            escapeValue: false
+                        }
+                    }, function(err, t) {
+                        if (err) console.error('i18n init error:', err);
+                        translatePage();
+                    });
+                } catch (error) {
+                    console.error('Error loading translation files:', error);
+                    // Fallback: show error message or use default language
+                }
+            }
+
+            // Initialize i18n when page loads
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initializeI18n);
+            } else {
+                initializeI18n();
+            }
 
             // Translate page content
             function translatePage() {
